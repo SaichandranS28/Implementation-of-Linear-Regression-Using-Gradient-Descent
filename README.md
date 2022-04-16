@@ -27,8 +27,8 @@ RegisterNumber:  212220040138
 ```
 
 ## Output:
-![linear regression using gradient descent](GD1.png)
-![linear regression using gradient descent](GD2.png)
+![linear regression using gradient descent](/GD1.PNG)
+![linear regression using gradient descent](/GD2.PNG)
 
 ## Result:
 Thus the program to implement the linear regression using gradient descent is written and verified using python programming.
