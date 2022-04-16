@@ -24,8 +24,41 @@ Program to implement the linear regression using gradient descent.
 Developed by: S Saichandran
 RegisterNumber:  212220040138
 */
-```
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 
+dataset=pd.read_csv("/Student.csv")
+dataset.head()
+dataset.isnull().sum()
+x=dataset.Hours
+x.head()
+y=dataset.Scores
+y.head()
+n=len(x)
+m=0
+c=0
+L=0.01
+loss=[]
+for i in range(10000):
+ ypred=m*x+c
+ MSE=(1/n)*sum((ypred-y)*2)
+ dm=(2/n)*sum(x*(ypred-y))
+ dc=(2/n)*sum(ypred-y)
+ c=c-L*dc
+ m=m-L*dm
+ loss.append(MSE)
+print(m,c)
+ypred=m*x+c
+plt.scatter(x,y,color='red')
+plt.plot(x,ypred)
+plt.xlabel("studey hours")
+plt.label("scores")
+plt.title("study hours vs Scores")
+plt.plot(loss)
+plt.xlabel("iterations")
+plt.ylabel("loss")
+```
 ## Output:
 ![linear regression using gradient descent](/GD1.PNG)
 ![linear regression using gradient descent](/GD2.PNG)
