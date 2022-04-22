@@ -21,7 +21,7 @@ To write a program to implement the linear regression using gradient descent.
 ```
 /*
 Program to implement the linear regression using gradient descent.
-Developed by: S Saichandran
+Developed by:  S Saichandran
 RegisterNumber:  212220040138
 */
 import numpy as np
@@ -60,8 +60,8 @@ plt.xlabel("iterations")
 plt.ylabel("loss")
 ```
 ## Output:
-![linear regression using gradient descent](/GD1.PNG)
-![linear regression using gradient descent](/GD2.PNG)
+![linear regression using gradient descent](GD1.PNG)
+![linear regression using gradient descent](GD2.PNG)
 
 ## Result:
 Thus the program to implement the linear regression using gradient descent is written and verified using python programming.
